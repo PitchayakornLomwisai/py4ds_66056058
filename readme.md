@@ -6,7 +6,7 @@
 2. ติดตั้ง libraryเหล่านี้ด้วยคำสั่งด้านล่าง
 
 > pip install -r requirements.txt
-
+student ID: 66056058
 -----
 ### รายชื่อ library และ version (2023-10-01)
 
