@@ -30,7 +30,7 @@ def perimeter(length, width):
     Returns:
         float: The perimeter of the rectangle.
     """
-    # TODO : complete this
+    # FIX : complete this
     perimeter_cal = 2 * (length + width)
     return perimeter_cal
 
