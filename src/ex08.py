@@ -19,7 +19,7 @@ def write_to_file(filename, message):
         file.write(message)
 
 
-def read_from_file(param):
+def read_from_file(filename):
     """
     Read the contents of a file.
 
@@ -29,11 +29,15 @@ def read_from_file(param):
     Returns:
         str: The contents of the file.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+
+    with open(filename, "r") as file:
+        contents = file.read()
+    return contents
 
 
-def append_to_file(param, param1):
+
+def append_to_file(filename, message):
     """
     Append the given message to the end of the specified file.
 
@@ -44,5 +48,6 @@ def append_to_file(param, param1):
     Returns:
         None: This function does not return anything.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    with open(filename, "a") as file:
+        file.write(message)
