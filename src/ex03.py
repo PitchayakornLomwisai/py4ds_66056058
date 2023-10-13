@@ -27,5 +27,5 @@ def is_even(num):
     Returns:
         bool: True if the number is even, False otherwise.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    return num % 2 == 0
