@@ -16,5 +16,13 @@ def get_time_every_15_min():
     Returns:
         str: The generated time string.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+
+    meridiems = ['am', 'pm']
+
+    for meridiem in meridiems:
+        for hour in ['12', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11']:
+            for minute in ['00', '15', '30', '45']:
+                time_string = f"{hour}:{minute} {meridiem}"
+
+                print(time_string)
