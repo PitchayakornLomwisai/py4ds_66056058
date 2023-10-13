@@ -3,7 +3,7 @@ Execise 7
 """
 
 
-def print_ASCII_table():
+def print_ASCII_table(start_char, end_char):
     """
     Generate and print the ASCII table for a range of characters.
 
@@ -15,5 +15,10 @@ def print_ASCII_table():
         str: Returns nothing. The function simply prints the ASCII characters.
 
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    if start_char <= end_char:
+        for char_code in range(start_char, end_char + 1):
+            character = chr(char_code)
+            print(f"{character}")
+    else:
+        print("Invalid range: start_char must be less than or equal to end_char")
