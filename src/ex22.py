@@ -3,7 +3,7 @@ Exercise 22 : Rock Paper Scissor
 """
 
 
-def rps_check(param, param1):
+def rps_check(p1, p2):
     """
     Check the result of a rock-paper-scissors game between two players.
 
@@ -14,5 +14,19 @@ def rps_check(param, param1):
     Returns:
         str: The result of the game. It can be 'player one', 'player two', or 'tie'.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    winning_condition = {
+        ('rock', 'scissors'), ('scissors', 'paper'), ('paper', 'rock')
+    }
+
+    # check invalid Input
+    if p1 not in {'rock', 'paper', 'scissors'} or p2 not in {'rock', 'paper', 'scissors'}:
+        return "Invalid choice"
+
+
+    if p1 == p2:
+        return "tie"
+    elif (p1, p2) in winning_condition:
+        return "player one"
+    else:
+        return "player two"
