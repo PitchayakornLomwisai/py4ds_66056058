@@ -3,7 +3,7 @@ Exercise 13
 """
 
 
-def calc_sum(params):
+def calc_sum(lst):
     """
     Calculate the sum of a list of numbers.
 
@@ -13,7 +13,10 @@ def calc_sum(params):
     Returns:
     - int: The sum of all the numbers in the list.
     """
-    pass
+    if len(lst) == 0:
+        return 0
+    else:
+        return sum(lst)
 
 
 def calc_prod(params):
