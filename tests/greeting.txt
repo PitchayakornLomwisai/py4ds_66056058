@@ -1,2 +1,2 @@
-write to current file
-append to current file
+Hello
+World!
