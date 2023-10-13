@@ -13,7 +13,7 @@ def convert_to_fahrenheit(celsius):
     Returns:
         float: The temperature in Fahrenheit.
     """
-    # TODO : complete this
+    # FIX : complete this
     warning_message = "please put your celsius temp"
     if celsius == None:
         return warning_message
