@@ -1,8 +1,3 @@
-"""
-Execise 2
-"""
-
-
 def convert_to_fahrenheit(celsius):
     """
     Convert Celsius temperature to Fahrenheit.
@@ -19,8 +14,7 @@ def convert_to_fahrenheit(celsius):
         return warning_message
     else:
         fahrenheit_temp = (9/5) * celsius + 32
-        return fahrenheit_temp
-
+        return round(fahrenheit_temp, 2)
 
 def convert_to_celsius(fahrenheit):
     """
@@ -38,5 +32,4 @@ def convert_to_celsius(fahrenheit):
         return warning_message
     else:
         celsius = (fahrenheit - 32) * (5/9)
-        return celsius
-
+        return round(celsius, 2)
