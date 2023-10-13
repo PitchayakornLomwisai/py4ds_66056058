@@ -19,7 +19,7 @@ def calc_sum(lst):
         return sum(lst)
 
 
-def calc_prod(params):
+def calc_prod(lst):
     """
     Calculates the product of all the numbers in the given list.
 
@@ -29,4 +29,11 @@ def calc_prod(params):
     Returns:
         int: The product of all the numbers in the list.
     """
-    pass
+    result = 1
+    if len(lst) == 0:
+        return result
+    else:
+        for i in lst:
+            result = result * i
+        print(result)
+        return result
