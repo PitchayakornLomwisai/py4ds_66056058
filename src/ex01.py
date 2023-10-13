@@ -21,7 +21,7 @@ def know_my_name():
     Returns:
         str: The name entered by the user.
     """
-    # TODO : complete this
+    # FIX : complete this
     name = str(input("Put your name"))
     return name
 
